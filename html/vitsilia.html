@@ -1,0 +1,82 @@
+<!-- RABEANTOANDRO Mirantsoa Adrianna n°8 MSI3-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Vitsilia GasGame | Vitsilia</title>
+        <link rel="stylesheet" href="../css/vitsilia.css"/>
+        <link rel="shorcut icon" type="image/x-icon" href="../img/sprintshorcut.png"/>
+        <!--  -->
+    </head>
+    <body id = "body">
+        <!--Navbar-->
+        <div class = "navbar">
+
+            <!--Icon -->
+            <div class = "icon">
+                <span>V<img src = "../img/sprint.png" alt = "I" width = "34px">tsilia</span>
+            </div>
+
+            <!--Menu -->
+            <div class = "menu">
+                <ul>
+                    <li><a href = "../index.html" target = "_self"><span>Home</span></a></li>
+                    <li><a href = "rules.html" target = "_self"><span>Rules</span></a></li>
+                    <li><a href = "" target = ""><span>Game</span></a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!--Main -->
+        <div class = "main">
+            <div class = "main1">
+                <h1 class = "title">Let's play!</h1>
+                <div class = "guide">
+                    <div class = "img">
+                        <img src = "../img/arrow.png" width = "100px">
+                    </div>
+                    <p>
+                        Use the keyboard arrows to move the members of your team.
+                    </p>
+                </div>
+
+                <div class = exp>
+                    <p class = "exp1">
+                        The goal is from entering the playground and succeeding to get out of the 
+                        other side to the finish line without being caught by the opponent team.
+                        Make care not to go along of the length Land. 
+                    </p>
+                    <p class = "exp1">
+                        The game will be over once all members of your team have each done their turn.
+                    </p>
+                    <p class = "exp1" style="color: rgb(255, 195, 15);">
+                        * Your team has 5 players and align yourself horizontally before the game starts.
+                    </p>
+                    <button onclick = "choiceLevel();"><img src = "../img/new.png" alt = "" width = "24px">New game part</button>
+                </div>
+                
+                <div class = "copyright">
+                    <p>&copy; 2023 Copyright : Vitsilia GasGame</p>
+                    <p>Design and realization : Mirantsoa Rabeantoandro</p>
+                </div>
+            </div>
+
+            <div id = "choice">
+                <p class = "lv">LEVEL</p>
+                <div class = "btn">
+                    <button id = "c1" value = "easy" onclick = "checkChoice(this.id);">Easy</button>
+                    <button id = "c2" value = "normal" onclick = "checkChoice(this.id);">Normal</button>
+                    <button id = "c3" value = "hard" onclick = "checkChoice(this.id);">Hard</button>
+                </div>   
+            </div>
+            
+            <div class = "main2">
+                <canvas id="ground" width="520px" height="520px"></canvas>
+            </div>
+        </div>
+
+        <script src="../js/vitsilia.js"></script>
+    </body>
+</html>

@@ -1,0 +1,246 @@
+/* RABEANTOANDRO Mirantsoa Adrianna n°8 MSI3 */
+
+*{
+    margin: 0;
+    padding: 0;
+    color:aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background: linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../img/vitsilia.jpg") no-repeat fixed center/cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+
+.icon{
+    width: 60%;
+    font-size: 28px;
+    margin-top: 3px;
+    margin-left: 150px;
+}
+
+.menu{
+    width: 40%;
+    margin-right: 150px;
+}
+
+.menu ul{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: 0.4s;
+}
+
+.menu li:hover{
+    background: rgba(255,255,255,0.2);
+    border-radius: 5px;
+}
+
+.menu a{
+    text-decoration: none;
+}
+
+.main{
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+}
+
+.main1, .main2{
+    width: 50%;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.main1{
+    margin-left: 150px;
+}
+
+.title{
+    height: 25%;
+}
+
+.def{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top: 25%;
+    width: 75%;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.social{
+    position: absolute;
+    bottom: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social img{
+    padding: 5px 5px;
+    margin-right: 8px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.social img:hover{
+    background: none;
+    cursor: pointer;
+}
+
+.copyright, .contact{
+    position: absolute;
+    width: 100%;
+    bottom: 2%;
+    font-size: 16px;
+}
+
+.main2{
+    margin-right : 150px;
+}
+
+.choicebutton{
+    height: 20%;
+    display: flex;
+    position: absolute;
+    top: 25%;
+    right: 0%;
+    width: 70%;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.choicebutton a{
+    text-decoration: none;
+}
+
+button{
+    color: black;
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+button:hover{
+    background: rgba(255, 195, 15, 0.2);
+    cursor: pointer;
+}
+
+button img{
+    margin-right: 20px;
+}
+
+.copyright{
+    text-align: right;
+}
+
+@media screen and (max-width : 900px){
+    body{
+        height: 100%;
+        overflow-y: scroll;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    .main1, .main2{
+        width: 65%;
+        margin: 0;
+    }
+    .main1{
+        height: 55%;
+    }
+    .main2{
+        height: 45%;
+    }
+    .def{
+        width: 100%;
+    }
+    .social{
+        bottom: 18%;
+    }
+    .choicebutton{
+        height: 40%;
+        width: 50%;
+        top: 10%;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    .copyright{
+        text-align: left;
+        bottom: 30%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .icon{
+        margin-left: 130px;
+    }
+    .menu{
+        margin-right: 130px;
+    }
+    .main1{
+        height: 60%;
+    }
+    .main2{
+        height: 40%;
+    }
+    .social{
+        bottom: 16%;
+    }
+    .copyright{
+        bottom: 25%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .icon{
+        margin-left: 80px;
+    }
+    .menu{
+        margin-right: 80px;
+    }
+    .main1{
+        height: 65%;
+    }
+    .main2{
+        height: 35%;
+    }
+    .social{
+        bottom: 15%;
+    }
+    .choicebutton{
+        top: 3%;
+    }
+}
